@@ -1,4 +1,3 @@
-
 #Oracle DataAccess
 
 Since the Oracle access dll from Microsoft is pretty much deprecated you should use the ODAC stuff from Oracle. 
@@ -105,3 +104,6 @@ You can specify your own location for the tnsnames.ora file by
 - finding HKLM\Software\Oracle\KEY_Homename, where Homename is the name you provided during installation
 - adding the value TNS_ADMIN = "Path to your tnsnames.ora file"
 
+#Schemas
+
+By default, it's expected that the Schema name matches the username being used to access the database. If not, then this can be overriden in `App.Config` using `Simple.Data.Oracle.Schema`.
